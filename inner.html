@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration & Result Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Student Portal</div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#registration">Registration</a>
+            <a href="#results">Results</a>
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <header id="home" class="hero">
+        <div>
+            <h1>Student Registration & Result Portal</h1>
+            <p>
+                Register student details, enter examination marks,
+                and view academic information in a structured format.
+            </p>
+
+            <a href="#registration" class="hero-btn">
+                Register Now
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Registration Section -->
+    <section id="registration" class="container">
+
+        <div class="section-title">
+            <h2>Student Registration</h2>
+            <p>Enter your personal and academic details</p>
+        </div>
+
+
+        <form action="#results" method="get">
+
+            <!-- Personal Details -->
+            <div class="card">
+
+                <h3>Personal Details</h3>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="studentName">
+                            Student Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="studentName"
+                            name="studentName"
+                            placeholder="Enter your full name"
+                            pattern="[A-Za-z ]{3,50}"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="registerNumber">
+                            Register Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="registerNumber"
+                            name="registerNumber"
+                            placeholder="Example: CS2026001"
+                            pattern="[A-Za-z0-9]{5,15}"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="student@example.com"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="10-digit mobile number"
+                            pattern="[0-9]{10}"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="dob">
+                            Date of Birth
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dob"
+                            name="dob"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="gender">
+                            Gender
+                        </label>
+
+                        <select id="gender" name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group full-width">
+                        <label for="course">
+                            Select Course
+                        </label>
+
+                        <select id="course" name="course" required>
+                            <option value="">Select Course</option>
+                            <option value="Computer Science">
+                                Computer Science
+                            </option>
+
+                            <option value="Information Technology">
+                                Information Technology
+                            </option>
+
+                            <option value="Cybersecurity">
+                                Cybersecurity
+                            </option>
+
+                            <option value="Artificial Intelligence">
+                                Artificial Intelligence
+                            </option>
+
+                            <option value="Data Science">
+                                Data Science
+                            </option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Marks Section -->
+            <div class="card">
+
+                <h3>Examination Marks</h3>
+
+                <p class="info">
+                    Enter marks between 0 and 100.
+                </p>
+
+
+                <div class="marks-grid">
+
+                    <div class="mark-box">
+                        <label for="html">
+                            HTML5
+                        </label>
+
+                        <input
+                            type="number"
+                            id="html"
+                            name="html"
+                            min="0"
+                            max="100"
+                            placeholder="0 - 100"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="mark-box">
+                        <label for="css">
+                            CSS3
+                        </label>
+
+                        <input
+                            type="number"
+                            id="css"
+                            name="css"
+                            min="0"
+                            max="100"
+                            placeholder="0 - 100"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="mark-box">
+                        <label for="javascript">
+                            JavaScript
+                        </label>
+
+                        <input
+                            type="number"
+                            id="javascript"
+                            name="javascript"
+                            min="0"
+                            max="100"
+                            placeholder="0 - 100"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="mark-box">
+                        <label for="dbms">
+                            DBMS
+                        </label>
+
+                        <input
+                            type="number"
+                            id="dbms"
+                            name="dbms"
+                            min="0"
+                            max="100"
+                            placeholder="0 - 100"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="mark-box">
+                        <label for="security">
+                            Cyber Security
+                        </label>
+
+                        <input
+                            type="number"
+                            id="security"
+                            name="security"
+                            min="0"
+                            max="100"
+                            placeholder="0 - 100"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Submit -->
+            <div class="button-area">
+
+                <button type="submit" class="submit-btn">
+                    Submit Registration
+                </button>
+
+                <button type="reset" class="reset-btn">
+                    Reset
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+
+    <!-- Result Section -->
+    <section id="results" class="result-section">
+
+        <div class="section-title">
+            <h2>Student Result</h2>
+            <p>Sample result display</p>
+        </div>
+
+
+        <div class="result-card">
+
+            <div class="student-header">
+                <div>
+                    <h3>Student Result Details</h3>
+                    <p>Academic Performance</p>
+                </div>
+
+                <div class="status">
+                    PASS
+                </div>
+            </div>
+
+
+            <div class="student-info">
+
+                <div>
+                    <strong>Student Name</strong>
+                    <span>John Doe</span>
+                </div>
+
+                <div>
+                    <strong>Register Number</strong>
+                    <span>CS2026001</span>
+                </div>
+
+                <div>
+                    <strong>Course</strong>
+                    <span>Computer Science</span>
+                </div>
+
+                <div>
+                    <strong>Email</strong>
+                    <span>student@example.com</span>
+                </div>
+
+            </div>
+
+
+            <!-- Result Table -->
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Maximum Marks</th>
+                            <th>Marks Obtained</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>HTML5</td>
+                            <td>100</td>
+                            <td>85</td>
+                            <td class="pass">PASS</td>
+                        </tr>
+
+                        <tr>
+                            <td>CSS3</td>
+                            <td>100</td>
+                            <td>90</td>
+                            <td class="pass">PASS</td>
+                        </tr>
+
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>100</td>
+                            <td>82</td>
+                            <td class="pass">PASS</td>
+                        </tr>
+
+                        <tr>
+                            <td>DBMS</td>
+                            <td>100</td>
+                            <td>78</td>
+                            <td class="pass">PASS</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cyber Security</td>
+                            <td>100</td>
+                            <td>88</td>
+                            <td class="pass">PASS</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- Result Summary -->
+            <div class="result-summary">
+
+                <div class="summary-box">
+                    <h4>Total Marks</h4>
+                    <p>423 / 500</p>
+                </div>
+
+                <div class="summary-box">
+                    <h4>Percentage</h4>
+                    <p>84.6%</p>
+                </div>
+
+                <div class="summary-box">
+                    <h4>Grade</h4>
+                    <p>A</p>
+                </div>
+
+                <div class="summary-box">
+                    <h4>Result</h4>
+                    <p class="pass">PASS</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Student Registration & Result Portal
+        </p>
+
+        <p>
+            Developed using HTML5 & CSS3
+        </p>
+
+    </footer>
+
+</body>
+</html>
